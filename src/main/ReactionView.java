@@ -187,7 +187,7 @@ public class ReactionView{
 			// Compute size of reaction
 			int size = 0;
 			for (int i3=0;i3<s.length;i3++){
-				  String name = main.PathwayViewer_3.getProteinName(s[i3].toString());
+				  String name = main.ReactionFlow_1_1.getProteinName(s[i3].toString());
 				  if (name!=null){
 					  size++;
 				  }	  
@@ -383,7 +383,7 @@ public class ReactionView{
 	public ArrayList<String> getUnidentifiedElements2(Object[] s) {
 		ArrayList<String> a = new ArrayList<String>();
 		for (int i=0;i<s.length;i++){
-			  String name = main.PathwayViewer_3.getProteinName(s[i].toString());
+			  String name = main.ReactionFlow_1_1.getProteinName(s[i].toString());
 			  if (mapProteinRDFId_index.get(name)!=null){
 			  }
 			  else  if (mapComplexRDFId_index.get(s[i].toString())!=null){
@@ -537,11 +537,11 @@ public class ReactionView{
 				float score = 0;
 				float size = 0;
 				for (int i3=0;i3<aLeft.length;i3++){
-					  String name = main.PathwayViewer_3.getProteinName(aLeft[i3].toString());
+					  String name = main.ReactionFlow_1_1.getProteinName(aLeft[i3].toString());
 					  if (name==null)
 						  name = aLeft[i3].toString();
 					  if (mapProteinRDFId_index.get(name)!=null){
-						  if (!main.PathwayViewer_3.isSmallMolecule(name)) {
+						  if (!main.ReactionFlow_1_1.isSmallMolecule(name)) {
 							  int p =mapProteinRDFId_index.get(name);
 							  score += iP[p].target;
 							  size++;
@@ -567,11 +567,11 @@ public class ReactionView{
 					  }
 				}	  
 				for (int i3=0;i3<aRight.length;i3++){
-					  String name = main.PathwayViewer_3.getProteinName(aRight[i3].toString());
+					  String name = main.ReactionFlow_1_1.getProteinName(aRight[i3].toString());
 					  if (name==null)
 						  name = aRight[i3].toString();
 					  if (mapProteinRDFId_index.get(name)!=null){
-						  if (!main.PathwayViewer_3.isSmallMolecule(name)) {
+						  if (!main.ReactionFlow_1_1.isSmallMolecule(name)) {
 							  int p =mapProteinRDFId_index.get(name);
 							  score += iP[p].target;
 							  size++;
@@ -663,10 +663,10 @@ public class ReactionView{
 	public ArrayList<Integer> getDirectProteinsComplexInOneSideOfReaction(Object[] s) {
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		for (int i3=0;i3<s.length;i3++){
-			  if (main.PathwayViewer_3.getProteinName(s[i3].toString())!=null){
-				  String name = main.PathwayViewer_3.getProteinName(s[i3].toString());
+			  if (main.ReactionFlow_1_1.getProteinName(s[i3].toString())!=null){
+				  String name = main.ReactionFlow_1_1.getProteinName(s[i3].toString());
 				  int pIndex = mapProteinRDFId_index.get(name);
-				  if (!main.PathwayViewer_3.isSmallMolecule(proteins[pIndex])) // do not include small molecules into reactions
+				  if (!main.ReactionFlow_1_1.isSmallMolecule(proteins[pIndex])) // do not include small molecules into reactions
 					  a.add(pIndex);
 			  }
 			  else if (unidentifiedList.contains(s[i3].toString())){
@@ -705,8 +705,8 @@ public class ReactionView{
 	public ArrayList<Integer> getAllInOneSideOfReaction(Object[] s) {
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		for (int i3=0;i3<s.length;i3++){
-			  if (main.PathwayViewer_3.getProteinName(s[i3].toString())!=null){
-				  String name = main.PathwayViewer_3.getProteinName(s[i3].toString());
+			  if (main.ReactionFlow_1_1.getProteinName(s[i3].toString())!=null){
+				  String name = main.ReactionFlow_1_1.getProteinName(s[i3].toString());
 				  int pIndex = mapProteinRDFId_index.get(name);
 				  //if (!main.PathwayViewer_2_11.isSmallMolecule(proteins[pIndex])) // do not include small molecules into reactions
 					  a.add(pIndex);
@@ -873,11 +873,11 @@ public class ReactionView{
 				float score = 0;
 				float size = 0;
 				for (int i3=0;i3<aLeft.length;i3++){
-					  String name = main.PathwayViewer_3.getProteinName(aLeft[i3].toString());
+					  String name = main.ReactionFlow_1_1.getProteinName(aLeft[i3].toString());
 					  if (name==null)
 						  name = aLeft[i3].toString();
 					  if (mapProteinRDFId_index.get(name)!=null){
-						  if (!main.PathwayViewer_3.isSmallMolecule(name)) {
+						  if (!main.ReactionFlow_1_1.isSmallMolecule(name)) {
 							  int p =mapProteinRDFId_index.get(name);
 							  score += iP[p].target;
 							  size++;
@@ -897,11 +897,11 @@ public class ReactionView{
 					  }
 				}	  
 				for (int i3=0;i3<aRight.length;i3++){
-					  String name = main.PathwayViewer_3.getProteinName(aRight[i3].toString());
+					  String name = main.ReactionFlow_1_1.getProteinName(aRight[i3].toString());
 					  if (name==null)
 						  name = aRight[i3].toString();
 					  if (mapProteinRDFId_index.get(name)!=null){
-						  if (!main.PathwayViewer_3.isSmallMolecule(name)) {
+						  if (!main.ReactionFlow_1_1.isSmallMolecule(name)) {
 							  int p =mapProteinRDFId_index.get(name);
 							  score += iP[p].target;
 							  size++;
@@ -1856,7 +1856,7 @@ public class ReactionView{
 				for (int i=0;i<interElements.size();i++){
 					String ref = interElements.get(i);
 					parent.fill(0);
-					String name = main.PathwayViewer_3.getProteinName(ref);
+					String name = main.ReactionFlow_1_1.getProteinName(ref);
 					  if (name==null){
 						  String[] pieces = ref.split("/");
 						  if (pieces.length>=1)
@@ -2125,7 +2125,7 @@ public class ReactionView{
 					parent.fill(proteinRectionColor.getRed(), proteinRectionColor.getGreen(), proteinRectionColor.getBlue(),sat);
 						
 				}
-				if (!main.PathwayViewer_3.isSmallMolecule(proteins[p])){
+				if (!main.ReactionFlow_1_1.isSmallMolecule(proteins[p])){
 					parent.textSize(12);
 					parent.textAlign(PApplet.RIGHT);
 					parent.text(level,xR-18,y3);
@@ -2188,7 +2188,7 @@ public class ReactionView{
 		Object[] sRight1 = rectSelected.getRight().toArray();
 		// List output protein in current reaction
 		 for (int i3=0;i3<sRight1.length;i3++){
-			  String name = main.PathwayViewer_3.getProteinName(sRight1[i3].toString());
+			  String name = main.ReactionFlow_1_1.getProteinName(sRight1[i3].toString());
 			  if (name==null)
 				  name = sRight1[i3].toString();
 			  if (mapProteinRDFId_index.get(name)!=null){
@@ -2572,8 +2572,8 @@ public class ReactionView{
 	public ArrayList<Integer> getProteinsInOneSideOfReaction(Object[] s) {
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		for (int i3=0;i3<s.length;i3++){
-			  if (main.PathwayViewer_3.getProteinName(s[i3].toString())!=null){
-				  String name = main.PathwayViewer_3.getProteinName(s[i3].toString());
+			  if (main.ReactionFlow_1_1.getProteinName(s[i3].toString())!=null){
+				  String name = main.ReactionFlow_1_1.getProteinName(s[i3].toString());
 				   a.add(mapProteinRDFId_index.get(name));
 			  }
 			  else  if (mapComplexRDFId_index.get(s[i3].toString())!=null){
@@ -2610,7 +2610,7 @@ public class ReactionView{
 		parent.textSize(textSize);
 		String name = proteins[p];
 		Color c =  new Color(0,0,0);
-		if (main.PathwayViewer_3.isSmallMolecule(proteins[p])){
+		if (main.ReactionFlow_1_1.isSmallMolecule(proteins[p])){
 			c = smallMoleculeColor;
 		}
 		else if (unidentifiedList.contains(proteins[p])){
@@ -2662,7 +2662,7 @@ public class ReactionView{
 			int level = interElementsLevel.get(i);
 			if (curLevel==level){
 				String ref = interElements.get(i);
-				String interProteinName = main.PathwayViewer_3.getProteinName(ref);
+				String interProteinName = main.ReactionFlow_1_1.getProteinName(ref);
 				if(interProteinName!=null && interProteinName.equals(name)){
 					float x4 = xL;
 					float max = 0;
@@ -2690,7 +2690,7 @@ public class ReactionView{
 		parent.textSize(textSize);
 		String name = proteins[p];
 		Color c =  new Color(0,0,0);
-		if (main.PathwayViewer_3.isSmallMolecule(proteins[p])){
+		if (main.ReactionFlow_1_1.isSmallMolecule(proteins[p])){
 			c = smallMoleculeColor;
 		}
 		else if (unidentifiedList.contains(proteins[p])){
@@ -2727,7 +2727,7 @@ public class ReactionView{
 			int level = interElementsLevel.get(i);
 			if (curLevel==level){
 				String ref = interElements.get(i);
-				String interProteinName = main.PathwayViewer_3.getProteinName(ref);
+				String interProteinName = main.ReactionFlow_1_1.getProteinName(ref);
 				if(interProteinName!=null && interProteinName.equals(name)){
 					float x4 = xR;
 					// Compute the max value;
@@ -2870,15 +2870,15 @@ public class ReactionView{
 		boolean isContainedComplexL =false; // checking if there is a complex;
 		float yReact = iY[i2].value;
 		  for (int i3=0;i3<sLeft.length;i3++){
-			  String name = main.PathwayViewer_3.getProteinName(sLeft[i3].toString());
+			  String name = main.ReactionFlow_1_1.getProteinName(sLeft[i3].toString());
 			  if (name==null)
 				  name = sLeft[i3].toString();
 
 			  if (mapProteinRDFId_index.get(name)!=null){
 				  float y5 = iP[mapProteinRDFId_index.get(name)].value-hProtein/4f;
-				  if (check11.s && main.PathwayViewer_3.isSmallMolecule(name))
+				  if (check11.s && main.ReactionFlow_1_1.isSmallMolecule(name))
 					  drawGradientLine(xL, y5, xRect, yReact, smallMoleculeColor, sat);
-				  else if (check15.s && !main.PathwayViewer_3.isSmallMolecule(name) && sat==200){
+				  else if (check15.s && !main.ReactionFlow_1_1.isSmallMolecule(name) && sat==200){
 					  drawGradientLine(xL, y5, xRect, yReact, proteinRectionColor, sat);
 				  }
 				  else {
@@ -2897,14 +2897,14 @@ public class ReactionView{
 						  float yDel = (yReact-y5)*percent;
 						  
 						  parent.stroke(proteinRectionColor.getRed(),proteinRectionColor.getGreen(),proteinRectionColor.getBlue(),newSatForSimulation);
-						  if (main.PathwayViewer_3.isSmallMolecule(name)){
+						  if (main.ReactionFlow_1_1.isSmallMolecule(name)){
 								parent.stroke(smallMoleculeColor.getRed(),smallMoleculeColor.getGreen(),smallMoleculeColor.getBlue(),newSatForSimulation);
 						  }
 						  parent.line(xL, y5, xL+xDel, y5+yDel);
 					  }
 					  else {
 						  parent.stroke(proteinRectionColor.getRed(),proteinRectionColor.getGreen(),proteinRectionColor.getBlue(),sat);
-					  	  if (main.PathwayViewer_3.isSmallMolecule(name)){
+					  	  if (main.ReactionFlow_1_1.isSmallMolecule(name)){
 								parent.stroke(smallMoleculeColor.getRed(),smallMoleculeColor.getGreen(),smallMoleculeColor.getBlue(),sat);
 						  }
 						  parent.line(xL, y5, xRect, yReact);
@@ -2934,14 +2934,14 @@ public class ReactionView{
 		  boolean isContainedComplexR =false; // checking if there is a complex;
 		  Object[] sRight = rect.getRight().toArray();
 		  for (int i3=0;i3<sRight.length;i3++){
-			  String name = main.PathwayViewer_3.getProteinName(sRight[i3].toString());
+			  String name = main.ReactionFlow_1_1.getProteinName(sRight[i3].toString());
 			  if (name==null)
 				  name = sRight[i3].toString();
 			  if (mapProteinRDFId_index.get(name)!=null){
 				  float y6 = iP[mapProteinRDFId_index.get(name)].value-hProtein/4f;
-				  if (check11.s && main.PathwayViewer_3.isSmallMolecule(name))
+				  if (check11.s && main.ReactionFlow_1_1.isSmallMolecule(name))
 					  drawGradientLine(xRect, yReact, xR, y6, smallMoleculeColor, sat);
-				  else if (check15.s && !main.PathwayViewer_3.isSmallMolecule(name) && sat==200){
+				  else if (check15.s && !main.ReactionFlow_1_1.isSmallMolecule(name) && sat==200){
 					  drawGradientLine(xRect, yReact, xR, y6, proteinRectionColor, sat);
 				  }
 				  else{
@@ -2959,14 +2959,14 @@ public class ReactionView{
 						  float xDel = (xR-xRect)*percent;
 						  float yDel = (y6-yReact)*percent;
 						  parent.stroke(proteinRectionColor.getRed(),proteinRectionColor.getGreen(),proteinRectionColor.getBlue(),newSatForSimulation);
-						  if (main.PathwayViewer_3.isSmallMolecule(name))
+						  if (main.ReactionFlow_1_1.isSmallMolecule(name))
 								parent.stroke(smallMoleculeColor.getRed(),smallMoleculeColor.getGreen(),smallMoleculeColor.getBlue(),newSatForSimulation);
 						  parent.line(xRect, yReact, xRect+xDel, yReact+yDel);
 						  
 					  }
 					  else{
 						  parent.stroke(proteinRectionColor.getRed(),proteinRectionColor.getGreen(),proteinRectionColor.getBlue(),sat);
-						  if (main.PathwayViewer_3.isSmallMolecule(name))
+						  if (main.ReactionFlow_1_1.isSmallMolecule(name))
 								parent.stroke(smallMoleculeColor.getRed(),smallMoleculeColor.getGreen(),smallMoleculeColor.getBlue(),sat);
 						 parent.line(xRect, yReact,xR, y6);
 					  }	  
@@ -3259,7 +3259,7 @@ public class ReactionView{
 			BiochemicalReaction rect = rectList.get(r);
 			Object[] sLeft = rect.getLeft().toArray();
 			for (int i3=0;i3<sLeft.length;i3++){
-				 String name = main.PathwayViewer_3.getProteinName(sLeft[i3].toString());
+				 String name = main.ReactionFlow_1_1.getProteinName(sLeft[i3].toString());
 				 if (name==null)
 					  name = sLeft[i3].toString();
 				 if (mapProteinRDFId_index.get(name)!=null && mapProteinRDFId_index.get(name)==protein){
@@ -3292,7 +3292,7 @@ public class ReactionView{
 			BiochemicalReaction rect = rectList.get(r);
 			Object[] sRight = rect.getRight().toArray();
 			for (int i3=0;i3<sRight.length;i3++){
-				 String name = main.PathwayViewer_3.getProteinName(sRight[i3].toString());
+				 String name = main.ReactionFlow_1_1.getProteinName(sRight[i3].toString());
 				  if (name==null)
 					  name = sRight[i3].toString();
 				  if (mapProteinRDFId_index.get(name)!=null && mapProteinRDFId_index.get(name)==bProteinR){
@@ -3745,7 +3745,7 @@ public class ReactionView{
 			BiochemicalReaction rect = rectList.get(r);
 			Object[] sLeft = rect.getLeft().toArray();
 			for (int i3=0;i3<sLeft.length;i3++){
-				 String name = main.PathwayViewer_3.getProteinName(sLeft[i3].toString());
+				 String name = main.ReactionFlow_1_1.getProteinName(sLeft[i3].toString());
 				  if (name==null)
 					  name = sLeft[i3].toString();
 				  if (mapProteinRDFId_index.get(name)!=null && mapProteinRDFId_index.get(name)==sProtein){
@@ -3771,7 +3771,7 @@ public class ReactionView{
 			BiochemicalReaction rect = rectList.get(r);
 			Object[] sLeft = rect.getLeft().toArray();
 			for (int i3=0;i3<sLeft.length;i3++){
-				 String name = main.PathwayViewer_3.getProteinName(sLeft[i3].toString());
+				 String name = main.ReactionFlow_1_1.getProteinName(sLeft[i3].toString());
 				  if (name==null)
 					  name = sLeft[i3].toString();
 				  if (mapComplexRDFId_index.get(sLeft[i3].toString())!=null){

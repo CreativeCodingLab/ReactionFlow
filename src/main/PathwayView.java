@@ -1475,8 +1475,8 @@ public class PathwayView{
 		if (g==null) return;
 		
 		if (Pathway2.bEdges!=null && Pathway2.bEdges.size()>0){
-			PathwayViewer_3.thread12 =new Thread(PathwayViewer_3.loader12);
-			PathwayViewer_3.thread12.start();
+			ReactionFlow_1_1.thread12 =new Thread(ReactionFlow_1_1.loader12);
+			ReactionFlow_1_1.thread12.start();
 			
 			System.out.println("mouseClicked()  bEdges");
 		}
