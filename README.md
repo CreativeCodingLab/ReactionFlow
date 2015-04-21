@@ -1,6 +1,6 @@
 ReactionFlow
 =============
-ReactionFlow is an application for visualizing biological pathways, emphasizing "causality analysis" tasks.
+ReactionFlow is a visual analytics application for pathway analysis that emphasizes the structural and causal relationships amongst proteins, complexes, and biochemical reactions within a given pathway.
 
 The application (ReactionFlow_1_1.jar) is available in application.Cross-Platform folder.
 
