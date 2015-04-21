@@ -1,0 +1,4 @@
+#!/bin/sh
+
+APPDIR=$(dirname "$0")
+java  -Djava.library.path="$APPDIR" -cp "lib/ReactionFlow_1_1.jar"main.ReactionFlow_1_1

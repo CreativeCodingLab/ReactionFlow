@@ -321,6 +321,8 @@ public class ReactionView{
 			updateReactionPositions(); 
 			updateProteinPositions();
 			updateComplexPositions();
+			updateReactionPositions(); 
+			
 		}
 	}
 	
@@ -1352,7 +1354,7 @@ public class ReactionView{
 		percentPositionComplex.update();
 		
 		xL = x_;
-		float www = parent.width/2.2f;
+		float www = parent.width/2.4f;
 		xL2 = xL+www*percentPositionComplex.value;
 		xRect = x_+www*0.5f;
 		xR = x_+www;
@@ -1930,7 +1932,7 @@ public class ReactionView{
 				check14.draw((int) x7, (int) y7+38);
 				check15.draw((int) x7, (int) y7+57);
 				// Draw word cloud
-				wordCloud1.x1= (int) (parent.width*0.80f); 
+				wordCloud1.x1= (int) (parent.width*0.88f); 
 				wordCloud1.x2=parent.width; 
 				wordCloud1.draw(parent);
 				
@@ -1950,7 +1952,7 @@ public class ReactionView{
 				drawRelationship(wordCloud1, rel1, Color.BLACK,minCount1);
 				
 				// Draw word cloud
-				wordCloud2.x1= (int) (parent.width*0.80f); 
+				wordCloud2.x1= (int) (parent.width*0.88f); 
 				wordCloud2.x2=parent.width; 
 				wordCloud2.draw(parent);
 				
@@ -2079,8 +2081,8 @@ public class ReactionView{
 			*/
 			// Draw buttons
 			parent.strokeWeight(1);
-			popupReactionOrder.draw(parent.width-198);
-			popupCausality.draw(parent.width-298);
+			popupReactionOrder.draw(parent.width-98);
+			popupCausality.draw(parent.width-198);
 	}
 
 	// Compute shortest path
