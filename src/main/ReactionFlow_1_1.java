@@ -122,11 +122,11 @@ public class ReactionFlow_1_1 extends PApplet {
 	public void draw() {
 		background(255);
 		//this.scale(4);
-		if (this.keyPressed){
-		translate(width/3,mouseY); // use translate around scale
+	  /*	if (this.keyPressed){
+			translate(width/3,mouseY); // use translate around scale
 		  scale(2.5f);
 		  translate(-width/3,-mouseY); // to scale from the center
-		}
+		}*/
 		// Draw 
 		try{
 			// Print message when loading multiple pathways
@@ -262,7 +262,10 @@ public class ReactionFlow_1_1 extends PApplet {
 			try{
 				System.out.println();
 				System.out.println("***************** Load data: "+modFile+" ***************************");
+				long t1 = System.currentTimeMillis();
 				model = io.convertFromOWL(new FileInputStream(modFile));
+				long t2 = System.currentTimeMillis();
+				System.out.println(t2-t1);
 				ReactionView.mapProteinRDFId = new HashMap<String,String>();
 				ReactionView.mapSmallMoleculeRDFId =  new HashMap<String,String>();
 				ReactionView.mapComplexRDFId_index =  new HashMap<String,Integer>();
@@ -271,6 +274,7 @@ public class ReactionFlow_1_1 extends PApplet {
 				 for (Protein currentProtein : proteinSet){
 					 ReactionView.mapProteinRDFId.put(currentProtein.getRDFId().toString(), currentProtein.getDisplayName());
 				 }
+				 System.out.println(proteinSet.size());
 					
 				 Set<SmallMolecule> set = model.getObjects(SmallMolecule.class);
 				 for (SmallMolecule currentMolecule : set){
@@ -319,6 +323,7 @@ public class ReactionFlow_1_1 extends PApplet {
 				  
 				 // Figure 1 in the paper
 				 
+				 /*
 				 
 				 i2=0;
 				 ReactionView.reactionSet = new HashSet<BiochemicalReaction>();
@@ -338,7 +343,7 @@ public class ReactionFlow_1_1 extends PApplet {
 				 }
 				 for (Pathway aPathway : model.getObjects(Pathway.class)){
 					 	 System.out.println("--------------*"+aPathway.getDisplayName());
-				 }
+				 }*/
 				
 			}
 			catch (FileNotFoundException e){
