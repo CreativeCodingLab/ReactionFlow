@@ -1352,7 +1352,7 @@ public class ReactionView{
 		percentPositionComplex.update();
 		
 		xL = x_;
-		float www = parent.width/2.3f;
+		float www = parent.width/3.4f;
 		xL2 = xL+www*percentPositionComplex.value;
 		xRect = x_+www*0.5f;
 		xR = x_+www;
