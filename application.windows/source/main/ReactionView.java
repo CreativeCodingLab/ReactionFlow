@@ -1722,13 +1722,15 @@ public class ReactionView{
 			else if (PopupCausality.s==3){
 				if (bRect>=0){
 					ArrayList<Integer> loopList =  new ArrayList<Integer>();
-					drawLoopFrom(bRect, loopList);
+					ArrayList<String> a = new ArrayList<String>();
+					drawLoopFrom(bRect, loopList,a);
 					loopReactionList = loopList;
 				}
 				else{
+					ArrayList<String> a = new ArrayList<String>();
 					for (int r=0;r<rectList.size();r++) {
 						ArrayList<Integer> loopRectList =  new ArrayList<Integer>();
-						drawLoopFrom(r, loopRectList);
+						drawLoopFrom(r, loopRectList, a);
 						for (int j=0;j<loopRectList.size();j++){
 							int index = loopRectList.get(j);
 							if (loopReactionList.indexOf(index)<0)
@@ -2150,7 +2152,7 @@ public class ReactionView{
 	}
 		
 	
-	public void drawLoopFrom(int beginReaction, ArrayList<Integer> loopRectList){
+	public void drawLoopFrom(int beginReaction, ArrayList<Integer> loopRectList, ArrayList<String> a){
 		ArrayList<Integer> downstreamList = new ArrayList<Integer>();
 		ArrayList<Integer> parentList = new ArrayList<Integer>();
 		ArrayList<Integer> levelDownstreamList = new ArrayList<Integer>();
@@ -2158,15 +2160,15 @@ public class ReactionView{
 		if (downstreamList.indexOf(beginReaction)>=0){
 			int indexLastReaction = downstreamList.indexOf(beginReaction);
 			int parent = parentList.get(indexLastReaction);
-			ArrayList<Integer> a = new ArrayList<Integer>();
+			ArrayList<Integer> b = new ArrayList<Integer>();
 			while (parent!=beginReaction){
-				a.add(parent);
+				b.add(parent);
 				indexLastReaction = downstreamList.indexOf(parent);
 				parent = parentList.get(indexLastReaction);
 			}
-			a.add(parent);
-			for (int i=a.size()-1;i>=0;i--){
-				int index = a.get(i);
+			b.add(parent);
+			for (int i=b.size()-1;i>=0;i--){
+				int index = b.get(i);
 				loopRectList.add(index);
 			}
 		}
@@ -2180,7 +2182,10 @@ public class ReactionView{
 			else{
 				g = loopRectList.get(0);
 			}
-			drawArc2(r,g);
+			if (!a.contains(r+" "+g)){
+				drawArc(r,g, new Integrator(1000), 0);
+				a.add(r+" "+g);
+			}	
 		}
 		
 	}
@@ -2294,7 +2299,7 @@ public class ReactionView{
 					iS[r][g].target(1000);
 					if (!buttonPause.s)   // Pause Button clicked
 						iS[r][g].update();
-					drawArc(r,g, iS[r][g], recursive, sat);
+					drawArc(r,g, iS[r][g], recursive);
 					if (recursive>=0){
 						if (processedList.indexOf(g)<0){
 							if (iS[r][g].value>=990){
@@ -2356,7 +2361,7 @@ public class ReactionView{
 		 
 	
 	
-	public void drawArc(int r, int g, Integrator inter, int level, float sat){
+	public void drawArc(int r, int g, Integrator inter, int level){
 		float y1 = iY[r].value;
 		float y2 = iY[g].value;
 		float yy = (y1+y2)/2;
@@ -2421,35 +2426,7 @@ public class ReactionView{
 		}
 	}
 	
-	public void drawArc2(int r, int g){
-		float y1 = iY[r].value;
-		float y2 = iY[g].value;
-		float yy = (y1+y2)/2;
-		
-		float d = PApplet.abs(y2-y1);
-		int numSec = (int) d;
-		if (numSec==0) return;
-		float beginAngle = -PApplet.PI/2;
-		if (y1>y2)
-			beginAngle = PApplet.PI/2;
-		
-		for (int k=0;k<=numSec;k++){
-			float percent = 1;
-			float endAngle = beginAngle+PApplet.PI/numSec;
-			if ((float) k/numSec >=(1-percent)){
-				parent.noFill();
-				float sss = (float) k/numSec;
-				float sat2 = 200*sss;
-				parent.stroke(255-sss*255,255-sss*255,0, sat2);
-				parent.strokeWeight(3);
-				if (k>numSec*0.7f)
-					parent.strokeWeight(3f*(numSec-k)/(numSec*0.3f));
-				
-				parent.arc(xRect, yy, d,d, beginAngle, endAngle);
-			}
-			beginAngle = endAngle;
-		}
-	}
+	
 	
 	
 	public ArrayList<String> compareInputOutput(Object[] a, Object[] b){
@@ -2551,8 +2528,12 @@ public class ReactionView{
 		float dis = PApplet.dist(x1, y1, x2, y2);
 		int numPoints= (int) (dis/1.1f);
 		float stepX = PApplet.abs(x2-x1)/numPoints;
-		parent.noStroke();
 		
+		//parent.noStroke();
+		parent.stroke(color.getRed(), color.getGreen(), color.getBlue(), 20);
+		parent.line(x1, y1, x2, y2);
+		
+		/*
 		for (float i = 0; i <= numPoints/3; i++) {
 			  float x3 = x1+i*stepX;	
 			  float x4 = x2-i*stepX;	
@@ -2566,7 +2547,7 @@ public class ReactionView{
 				   parent.ellipse(x3,y3,1.25f,1.25f);
 				   parent.ellipse(x4,y4,1.25f,1.25f);
 			  } 
-		}
+		}*/
 	} 
 	
 	
