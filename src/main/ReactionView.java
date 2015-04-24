@@ -2551,8 +2551,12 @@ public class ReactionView{
 		float dis = PApplet.dist(x1, y1, x2, y2);
 		int numPoints= (int) (dis/1.1f);
 		float stepX = PApplet.abs(x2-x1)/numPoints;
-		parent.noStroke();
 		
+		//parent.noStroke();
+		parent.stroke(color.getRed(), color.getGreen(), color.getBlue(), 20);
+		parent.line(x1, y1, x2, y2);
+		
+		/*
 		for (float i = 0; i <= numPoints/3; i++) {
 			  float x3 = x1+i*stepX;	
 			  float x4 = x2-i*stepX;	
@@ -2566,7 +2570,7 @@ public class ReactionView{
 				   parent.ellipse(x3,y3,1.25f,1.25f);
 				   parent.ellipse(x4,y4,1.25f,1.25f);
 			  } 
-		}
+		}*/
 	} 
 	
 	
