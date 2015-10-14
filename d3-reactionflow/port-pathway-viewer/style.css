@@ -1,0 +1,35 @@
+text {
+    font-family: Arial;
+    fill: #333;
+}
+
+main.container {
+    min-width: 90vw;
+}
+
+g.column text {
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+g.node {
+    cursor: pointer;
+}
+
+g.node text {
+    font-size: 0.5em;
+    font-family: Arial;
+    fill: #333;
+    fill-opacity: 0.5;
+}
+
+g.node circle {
+    fill: #333;
+    fill-opacity: 0.5;
+}
+
+g.link path {
+    stroke-opacity: 0.2;
+    fill: none;
+    stroke-width: 2;
+}
