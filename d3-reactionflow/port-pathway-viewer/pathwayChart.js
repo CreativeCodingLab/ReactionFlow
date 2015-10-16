@@ -1,3 +1,5 @@
+var mainG;
+    
 function pathwayChart() {
     function chart() {}
 
@@ -629,15 +631,17 @@ function pathwayChart() {
     chart.draw = function() {
         setAllPositions();
         moveAllGroupsAndLinks();
+
     };
 
-    var mainG;
+    
     chart.initialize = function(selection) {
-        var svg = selection.selectAll("svg").data([1]);
+        var svg = selection.selectAll(".svg2").data([1]);
         var vbWidth = width() + margin().left + margin().right,
             vbHeight = height() + margin().top + margin().bottom;
 
         svg.enter().append("svg")
+            .attr("class", "svg2");
 
         svg.append("defs")
             .call(function(d) {
@@ -652,10 +656,11 @@ function pathwayChart() {
                 .call(setGradientStops);
             })
 
+
         function setGradientStops(l) {
             l.append("stop").attr({
                 offset: "0%",
-                "stop-color": "red",
+                "stop-color": "#00f",
                 "stop-opacity": 1
             });
             l.append("stop").attr({

@@ -74,8 +74,18 @@ var dispatch = d3.dispatch(
         chart.data(data).draw();
 
         controlsUi.triggerDefault();
-
     });
+
+      var d = {label: "RAF/MAP kinase cascade", type: "xml", query: "../1_RAF-Cascade.xml", usesRdfAbout: false};
+        parser.usesRdfAbout(d.usesRdfAbout);
+        d3.selectAll(".controls .data button").attr("disabled", true);
+        if (d.type == "xml") {
+            var callback = function(d) { 
+                dispatch.foundBioPax(d3.select(d)); 
+                vis();
+                };
+            d3.xml(d.query, "application/xml", callback);
+        }
 
     controlsUi.on("chooseSorting", function(d) {
         var data = chart.data(),
@@ -104,6 +114,7 @@ var dispatch = d3.dispatch(
             var callback = function(d) { dispatch.foundBioPax(d3.select(d)); };
             d3.xml(d.query, "application/xml", callback);
         }
+        //debugger;
         // if (d.type == "json") d3.json
         // var request = d3[d.type](d.query)
     });
