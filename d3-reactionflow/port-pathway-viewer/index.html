@@ -1,4 +1,24 @@
 <html>
+<head>
+<meta charset="utf-8" />
+<title>ReactionFlow</title>
+<style>
+
+.node {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+  opacity: 0.4;
+  marker-end: url(#end-arrow);
+}
+
+</style>
+</head>
 <body>
     
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -11,6 +31,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 
+<script src="./js/cola.v3.min.js"></script>
 <script src="biopaxParser.js"></script>
 <script src="pathwayChart.js"></script>
 <script src="sortingUtilities.js"></script>

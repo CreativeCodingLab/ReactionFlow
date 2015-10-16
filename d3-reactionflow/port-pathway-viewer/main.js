@@ -8,17 +8,22 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 //Set up the force layout
-var force = d3.layout.force()
+/*var force = d3.layout.force()
     .charge(-100)
    // .linkStrength(10)
     .linkDistance(50)
     .gravity(0.05)
     //.friction(0.5)
     .alpha(0.1)
-    .size([width, height]);
+    .size([width, height]);*/
+ var force = cola.d3adaptor()
+    .linkDistance(30)
+    .size([width, height]);   
+
 var nodes, links;
 var link, node, nodeText;
-
+var nodeRadius = 10;
+            
 function vis() {
     nodes = [];    
     ["complex", "protein"].forEach(function(type) {
@@ -58,17 +63,48 @@ function vis() {
         }
     });  
 
+
+   
+    nodes.forEach(function (v) { v.width = v.height = nodeRadius/5; }); 
+
+    var constraints = {"axis":"y", "left":0, "right":1, "gap":25};
     force.nodes(nodes)
         .links(links)
-        .start();  
+        .flowLayout("y", 30)
+        //.symmetricDiffLinkLengths(30)
+        .avoidOverlaps(true)
+        .start();
+
+    
     force.on("tick", update);    
      
+     /*
     link = svg.selectAll(".link")
       .data(links)
     .enter().append("line")
       .attr("class", "link")
       .style("stroke", "#f00")
-      .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .style("stroke-width", function(d) { return Math.sqrt(d.value); });*/
+
+     // define arrow markers for graph links
+    svg.append('svg:defs').append('svg:marker')
+        .attr('id', 'end-arrow')
+        .attr('viewBox', '0 -5 10 10')
+        .attr('refX', 8)
+        .attr('markerWidth', 5)
+        .attr('markerHeight', 5)
+        .attr('orient', 'auto')
+      .append('svg:path')
+        .attr('d', 'M0,-5L10,0L0,5')
+        .attr('fill', '#666');
+
+    link = svg.selectAll(".link")
+            .data(links)
+          .enter().append('svg:path')
+            .style("stroke", "#000")
+            .attr('class', 'link');
+ 
+
 
     node = svg.selectAll(".node")
       .data(nodes)
@@ -95,8 +131,9 @@ function vis() {
 
 
 function update(){
-    console.log("update "+link);
+   // console.log("update "+link);
     if (link && node){
+     /*   
         link.attr("x1", function(d) { return d.source.x; })
             .attr("y1", function(d) { return d.source.y; })
             .attr("x2", function(d) { return d.target.x; })
@@ -105,9 +142,33 @@ function update(){
         node.attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
         nodeText.attr("x", function(d) { return d.x; })
-            .attr("y", function(d) { return d.y; });
+            .attr("y", function(d) { return d.y; });*/
+
+            link.each(function (d) {
+                if (isIE()) this.parentNode.insertBefore(this, this);
+            });
+            // draw directed edges with proper padding from node centers
+            link.attr('d', function (d) {
+                var deltaX = d.target.x - d.source.x,
+                    deltaY = d.target.y - d.source.y,
+                    dist = Math.sqrt(deltaX * deltaX + deltaY * deltaY),
+                    normX = deltaX / dist,
+                    normY = deltaY / dist,
+                    sourcePadding = nodeRadius/1.5,
+                    targetPadding = nodeRadius/1.5,
+                    sourceX = d.source.x + (sourcePadding * normX),
+                    sourceY = d.source.y + (sourcePadding * normY),
+                    targetX = d.target.x - (targetPadding * normX),
+                    targetY = d.target.y - (targetPadding * normY);
+                return 'M' + sourceX + ',' + sourceY + 'L' + targetX + ',' + targetY;
+            });
+
+            node.attr("cx", function (d) { return d.x; })
+                .attr("cy", function (d) { return d.y; });
+
     }    
 } 
+ function isIE() { return ((navigator.appName == 'Microsoft Internet Explorer') || ((navigator.appName == 'Netscape') && (new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null))); }
 
 // check if a node already exist.
 function isContainedChild(a, element) {
