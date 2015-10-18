@@ -47,18 +47,30 @@ function vis() {
             
     });    
 
-
+    // Process links ****************************************************************
     links = [];    
     chart.data().links.participantReaction.forEach(function(l) {
-        var name1= d3.select(l.source.node).select("displayName");
-        var name2= d3.select(l.target.node).select("displayName");
-        //console.log("side="+side+" type="+type+" "+d.y+"    name="+name.text());
+        var name1= d3.select(l.source.node).select("displayName");  // Participants
+        var name2= d3.select(l.target.node).select("displayName");  // Reactions      
+       console.log("side="+l.source.side+" type="+l.source.type+"    name="+name1);
         var node1 =  getNodeByName(nodes,name1);
         var node2 =  getNodeByName(nodes,name2);
+        
+        var participantSide =  l.source.side;
+
         if (node1 && node2){
             var newLink = {};
-            newLink.source = node1;
-            newLink.target = node2;
+            if (participantSide=="left"){
+                newLink.source = node1;
+                newLink.target = node2;
+            }
+            else if (participantSide=="right"){
+                newLink.source = node2;
+                newLink.target = node1;
+            }
+            else{
+                throw new Error("Something went wrong: Can NOT get side of participant in a reaction");
+            }    
             links.push(newLink);
         }
     });  
@@ -71,7 +83,8 @@ function vis() {
     force.nodes(nodes)
         .links(links)
         .flowLayout("y", 30)
-        //.symmetricDiffLinkLengths(30)
+       // .flowLayout("x", 30)
+        .symmetricDiffLinkLengths(30)
         .avoidOverlaps(true)
         .start();
 
@@ -126,7 +139,7 @@ function vis() {
        .text(function(d) { return d.name; });
 
     
-
+       drawColorLegend();
 }
 
 
@@ -165,7 +178,8 @@ function update(){
 
             node.attr("cx", function (d) { return d.x; })
                 .attr("cy", function (d) { return d.y; });
-
+          //  nodeText.attr("x", function(d) { return d.x; })
+         //   .attr("y", function(d) { return d.y; });
     }    
 } 
  function isIE() { return ((navigator.appName == 'Microsoft Internet Explorer') || ((navigator.appName == 'Netscape') && (new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null))); }

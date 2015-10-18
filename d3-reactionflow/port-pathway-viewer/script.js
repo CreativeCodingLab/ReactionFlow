@@ -72,11 +72,14 @@ var dispatch = d3.dispatch(
         };
 
         chart.data(data).draw();
-
+        debugger;
         controlsUi.triggerDefault();
     });
 
-      var d = {label: "RAF/MAP kinase cascade", type: "xml", query: "../1_RAF-Cascade.xml", usesRdfAbout: false};
+
+    // Tuan's code
+    // var d = {label: "RAF/MAP kinase cascade", type: "xml", query: "../mitotic_g1_g1_s_phases.xml", usesRdfAbout: false};
+        var d = {label: "RAF/MAP kinase cascade", type: "xml", query: "../1_RAF-Cascade.xml", usesRdfAbout: false};
         parser.usesRdfAbout(d.usesRdfAbout);
         d3.selectAll(".controls .data button").attr("disabled", true);
         if (d.type == "xml") {

@@ -203,7 +203,11 @@ function biopaxParser() {
         reactions = getReactionsArray(biopax());
         setParticipantsAndLinks(reactions);
         links = findReactionCasuality(links);
+         debugger;
+    
+
         
+
         participants.forEach(function(participant) {
             if (participant.type == "complex") getComplexComponents(participant, participant);
         })
