@@ -40,10 +40,18 @@ function vis() {
     });
     chart.data().reactions.forEach(function(d) {
         if (isContainedChild(nodes, d)<0){
-            d.type = d.type;
             d.name = d3.select(d.node).select("displayName").text();
             nodes.push(d);
         }
+            
+    });  
+
+    chart.data().pathways.forEach(function(d) {
+            d.name = d3.select(d.node).select("displayName").text();
+           // debugger;
+
+    //        nodes.push(d);
+    
             
     });    
 
@@ -52,7 +60,7 @@ function vis() {
     chart.data().links.participantReaction.forEach(function(l) {
         var name1= d3.select(l.source.node).select("displayName");  // Participants
         var name2= d3.select(l.target.node).select("displayName");  // Reactions      
-       console.log("side="+l.source.side+" type="+l.source.type+"    name="+name1);
+      // console.log("side="+l.source.side+" type="+l.source.type+"    name="+name1);
         var node1 =  getNodeByName(nodes,name1);
         var node2 =  getNodeByName(nodes,name2);
         

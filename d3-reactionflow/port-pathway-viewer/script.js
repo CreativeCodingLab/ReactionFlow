@@ -55,7 +55,7 @@ var dispatch = d3.dispatch(
     /////////////////////////////////
     var uiColumn = chartRow.append("div").classed("col-xs-2", true);
     var controlsUi = ui().defaultSorting("alphabetical").initialize(uiColumn);
-
+   
     // Sorting Utility
     /////////////////////////////////
     var sortUtility = sortingUtilities();
@@ -68,34 +68,34 @@ var dispatch = d3.dispatch(
         var data = {
             reactions: parser.reactions(),
             participants: parser.participants(),
-            links: parser.links()
+            links: parser.links(),
+            pathways: parser.pathways()
         };
-
         chart.data(data).draw();
-        debugger;
         controlsUi.triggerDefault();
     });
 
 
     // Tuan's code
     // var d = {label: "RAF/MAP kinase cascade", type: "xml", query: "../mitotic_g1_g1_s_phases.xml", usesRdfAbout: false};
-        var d = {label: "RAF/MAP kinase cascade", type: "xml", query: "../1_RAF-Cascade.xml", usesRdfAbout: false};
-        parser.usesRdfAbout(d.usesRdfAbout);
-        d3.selectAll(".controls .data button").attr("disabled", true);
-        if (d.type == "xml") {
-            var callback = function(d) { 
-                dispatch.foundBioPax(d3.select(d)); 
-                vis();
-                };
-            d3.xml(d.query, "application/xml", callback);
-        }
-
+    var d = {label: "RAF/MAP kinase cascade", type: "xml", query: "../1_RAF-Cascade.xml", usesRdfAbout: false};
+    parser.usesRdfAbout(d.usesRdfAbout);
+    d3.selectAll(".controls .data button").attr("disabled", true);
+    if (d.type == "xml") {
+        var callback = function(d) { 
+            dispatch.foundBioPax(d3.select(d)); 
+            vis();  
+        };
+        d3.xml(d.query, "application/xml", callback);
+    }
+   
+       
+    
     controlsUi.on("chooseSorting", function(d) {
         var data = chart.data(),
             participants = data.participants,
             reactions = data.reactions,
             links = data.links;
-
         // Get the function based on the button event data
         var func = sortUtility[d.func];
 
@@ -107,7 +107,7 @@ var dispatch = d3.dispatch(
             chart.resetPathLinesLength();
         }
         // var f = sortUtility[d.func];
-        // sortingObject[d.signal]
+        // sortingObject[d.signal]    
     });
     
     controlsUi.on("chooseData", function(d) {
@@ -127,7 +127,7 @@ var dispatch = d3.dispatch(
         // chart.animation();
         chart.startAnimation(chart.data().participants.right.complex[0]);
     });
-
+    
     // To use the API:
     /////////////////////////////////
     // parser.attributeName("rdf:about");
@@ -146,6 +146,7 @@ var dispatch = d3.dispatch(
     // Launch
     /////////////////////////////////
     // request.get();
+
 
 }());
 

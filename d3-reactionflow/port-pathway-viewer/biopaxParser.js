@@ -194,7 +194,12 @@ function biopaxParser() {
         }
         return links; 
     };
+    var pathways = [];
+    my.pathways = function() { 
+       return pathways; 
+    };
     
+
     // var biopax = my.biopax = getSet.bind(this)();
     var biopax;
     my.biopax = function(bp) {
@@ -203,10 +208,14 @@ function biopaxParser() {
         reactions = getReactionsArray(biopax());
         setParticipantsAndLinks(reactions);
         links = findReactionCasuality(links);
-         debugger;
-    
-
         
+        //var reactionsSelection = biopax().selectAll("BiochemicalReaction");
+       
+        // Tuan's code
+        var pathwaySelection = biopax().selectAll("Pathway");
+        pathways = selectionToArray(pathwaySelection)
+            .map(function(node) { 
+                return { node: node, type: "pathway" }; });
 
         participants.forEach(function(participant) {
             if (participant.type == "complex") getComplexComponents(participant, participant);
@@ -242,7 +251,7 @@ function biopaxParser() {
                     side: side,
                     type: type
                 });
-            });
+            }); 
             // var thisSide = _participants[side][type];
             // var otherSide = _participants[]
         });
@@ -254,7 +263,7 @@ function biopaxParser() {
         return selectionToArray(reactionsSelection)
             .map(function(node) { return { node: node, type: "reaction" }; });
     };
-    
+
     function setParticipantsAndLinks(_reactions) {
         _reactions.forEach(function(reaction) {
             
@@ -356,7 +365,6 @@ function biopaxParser() {
                 return d3.select(this).attr(attr) == resourceId;
             });
         if (participant.size() !== 1) {
-            debugger;
             throw new Error("participants length !== 1", resourceId);
         }
         return participant.node();
