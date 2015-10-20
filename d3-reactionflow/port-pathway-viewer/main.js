@@ -23,6 +23,9 @@ var svg = d3.select("body").append("svg")
 var nodes, links;
 var link, node, nodeText;
 var nodeRadius = 10;
+
+
+var nodes2, links2;
             
 function vis() {
     nodes = [];    
@@ -33,8 +36,7 @@ function vis() {
                     d.type = type;
                     d.name = d3.select(d.node).select("displayName").text();
                     nodes.push(d);
-                }
-                    
+                }                   
             });    
         });
     });
@@ -46,14 +48,53 @@ function vis() {
             
     });  
 
+    nodes2 = [];   
+    // Read all pathway information and their direct children 
     chart.data().pathways.forEach(function(d) {
-            d.name = d3.select(d.node).select("displayName").text();
-           // debugger;
+        var node1 = {}; node1.children = [];
+        node1.name = d3.select(d.node).attr("rdf:ID");
+        node1.displayName = d3.select(d.node).select("displayName").text();
+        node1.node = d.node;
+        nodes2.push(node1);
+        d.children = d3.select(d.node).selectAll("pathwayComponent")[0];
+        d.children.forEach(function(path){
+            var node2 ={};
+            node2.name = d3.select(path).attr("rdf:resource");
+            node1.children.push(node2);    
+        });    
+    }); 
 
-    //        nodes.push(d);
-    
+    // Connect parent-children node
+    nodes2.forEach(function(d) {
+        d.children.forEach(function(d2, c){
+            var pathwayIndex;
+            nodes2.forEach(function(d4, i) {
+                var curName = d2.name.substring(1);
+                var name4 = d4.name;
+                if (curName == name4){
+                    pathwayIndex = i;
+                }    
+            }); 
+            if (pathwayIndex>=0){
+                d.children[c] = nodes2[pathwayIndex];
+                d.children[c].isSubPathway = 1;
+
+            }
+        });     
+    }); 
+
+    // remove subpathway from the root level
+    for (var i=0;i<nodes2.length;i++){
+        if (nodes2[i].isSubPathway==1){
+            nodes2.splice(i,1);
+            i--;
+             //   console.log(d.name+" paaathwayIndex="+i);
             
-    });    
+        }
+    }    
+    
+
+
 
     // Process links ****************************************************************
     links = [];    
@@ -154,17 +195,6 @@ function vis() {
 function update(){
    // console.log("update "+link);
     if (link && node){
-     /*   
-        link.attr("x1", function(d) { return d.source.x; })
-            .attr("y1", function(d) { return d.source.y; })
-            .attr("x2", function(d) { return d.target.x; })
-            .attr("y2", function(d) { return d.target.y; });
-
-        node.attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; });
-        nodeText.attr("x", function(d) { return d.x; })
-            .attr("y", function(d) { return d.y; });*/
-
             link.each(function (d) {
                 if (isIE()) this.parentNode.insertBefore(this, this);
             });
