@@ -33,3 +33,30 @@ g.link path {
     fill: none;
     stroke-width: 2;
 }
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+    cursor: move;
+}
+
+.group2 {
+  stroke: #fff;
+  stroke-width: 1.5px;
+  cursor: move;
+  opacity: 0.7;
+}
+
+.link2 {
+  stroke: #7a4e4e;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+}
+
+.label2 {
+    fill: black;
+    font-family: Verdana;
+    font-size: 11px;
+    text-anchor: middle;
+    cursor: move;
+}
