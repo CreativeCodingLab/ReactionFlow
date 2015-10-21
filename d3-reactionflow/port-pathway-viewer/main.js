@@ -20,14 +20,22 @@ var svg = d3.select("body").append("svg")
     .linkDistance(30)
     .size([width, height]);   
 
+var cola = cola.d3adaptor()
+        .linkDistance(100)
+        .avoidOverlaps(true)
+        .handleDisconnected(false)
+        .size([width, height]);
+
+
 var nodes, links;
 var link, node, nodeText;
 var nodeRadius = 10;
 
 
-var nodes2, links2;
+var groups2, nodes2, links2;
             
 function vis() {
+    
     nodes = [];    
     ["complex", "protein"].forEach(function(type) {
         ["left", "right"].forEach(function(side) {
@@ -48,55 +56,65 @@ function vis() {
             
     });  
 
-    nodes2 = [];   
+    groups2 = [];  
+    nodes2 =[]; 
     // Read all pathway information and their direct children 
     chart.data().pathways.forEach(function(d) {
-        var node1 = {}; node1.children = [];
+        var node1 = {}; 
         node1.name = d3.select(d.node).attr("rdf:ID");
         node1.displayName = d3.select(d.node).select("displayName").text();
         node1.node = d.node;
-        nodes2.push(node1);
-        d.children = d3.select(d.node).selectAll("pathwayComponent")[0];
-        d.children.forEach(function(path){
+        groups2.push(node1);
+        
+        
+        var allCom = d3.select(d.node).selectAll("pathwayComponent")[0];
+        allCom.forEach(function(com){
             var node2 ={};
-            node2.name = d3.select(path).attr("rdf:resource");
-            node1.children.push(node2);    
-        });    
-    }); 
-
-    // Connect parent-children node
-    nodes2.forEach(function(d) {
-        d.children.forEach(function(d2, c){
-            var pathwayIndex;
-            nodes2.forEach(function(d4, i) {
-                var curName = d2.name.substring(1);
-                var name4 = d4.name;
-                if (curName == name4){
-                    pathwayIndex = i;
-                }    
-            }); 
-            if (pathwayIndex>=0){
-                d.children[c] = nodes2[pathwayIndex];
-                d.children[c].isSubPathway = 1;
-
+            node2.name = d3.select(com).attr("rdf:resource");
+            if (node2.name.indexOf("Pathway") > -1){
+                if (!node1.groupNames)
+                    node1.groupNames = [];
+                node1.groupNames.push(node2); 
             }
-        });     
+            else{
+                nodes2.push(node2); // for the node arrayList
+                if (!node1.leaves)
+                    node1.leaves = [];
+                node1.leaves.push(nodes2.length-1); // index of node in nodes2 list    
+            }
+        });
+
+       
     }); 
 
-    // remove subpathway from the root level
-    for (var i=0;i<nodes2.length;i++){
-        if (nodes2[i].isSubPathway==1){
-            nodes2.splice(i,1);
-            i--;
-             //   console.log(d.name+" paaathwayIndex="+i);
-            
-        }
-    }    
+    
+    // Connect parent-children node
+    groups2.forEach(function(d) {
+        if (d.groupNames){
+            d.groups = [];
+            d.groupNames.forEach(function(d2, c){
+                var pathwayIndex;
+                groups2.forEach(function(d4, i) {
+                    var curName = d2.name.substring(1);
+                    var name4 = d4.name;
+                    if (curName == name4){
+                        pathwayIndex = i;
+                    }    
+                }); 
+                if (pathwayIndex>=0){
+                    d.groups.push(pathwayIndex);
+                   // d.groups[c].isSubPathway = 1;
+                }
+            });  
+        }   
+    }); 
+
     
 
 
 
     // Process links ****************************************************************
+    /*
     links = [];    
     chart.data().links.participantReaction.forEach(function(l) {
         var name1= d3.select(l.source.node).select("displayName");  // Participants
@@ -140,15 +158,7 @@ function vis() {
     
     force.on("tick", update);    
      
-     /*
-    link = svg.selectAll(".link")
-      .data(links)
-    .enter().append("line")
-      .attr("class", "link")
-      .style("stroke", "#f00")
-      .style("stroke-width", function(d) { return Math.sqrt(d.value); });*/
-
-     // define arrow markers for graph links
+       // define arrow markers for graph links
     svg.append('svg:defs').append('svg:marker')
         .attr('id', 'end-arrow')
         .attr('viewBox', '0 -5 10 10')
@@ -165,8 +175,12 @@ function vis() {
           .enter().append('svg:path')
             .style("stroke", "#000")
             .attr('class', 'link');
- 
 
+
+
+
+ 
+    
 
     node = svg.selectAll(".node")
       .data(nodes)
@@ -188,10 +202,88 @@ function vis() {
        .text(function(d) { return d.name; });
 
     
-       drawColorLegend();
+       drawColorLegend();*/
+
+
+
+
+
+
+    nodes2.forEach(function (v) { 
+        v.width = v.height = nodeRadius*4; }); 
+
+    var color = d3.scale.category20();
+
+    svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    var g;    
+    cola
+        .nodes(nodes2)
+        .links([])
+        .groups(groups2)
+        .start();
+   
+        
+    var group2 = svg.selectAll(".group2")
+        .data(groups2)
+      .enter().append("rect")
+        .attr("rx", 8).attr("ry", 8)
+        .attr("class", "group2")
+        .style("fill", function (d, i) { return color(i); });
+
+    var link2 = svg.selectAll(".link2")
+        .data([])
+      .enter().append("line")
+        .attr("class", "link2");
+
+    var pad = 3;
+    var node2 = svg.selectAll(".node2")
+        .data(nodes2)
+      .enter().append("rect")
+        .attr("class", "node2")
+        .attr("width", function (d) { return d.width - 2 * pad; })
+        .attr("height", function (d) { return d.height - 2 * pad; })
+        .attr("rx", 5).attr("ry", 5)
+        .style("fill", function (d) { return color(groups2.length); })
+        .call(cola.drag);
+
+    var label2 = svg.selectAll(".label2")
+        .data(nodes2)
+       .enter().append("text")
+        .attr("class", "label2")
+        .text(function (d) { return d.name; })
+        .call(cola.drag);
+
+    node2.append("title")
+        .text(function (d) { return d.name; });
+
+    cola.on("tick", function () {
+       /* link2.attr("x1", function (d) { return d.source.x; })
+            .attr("y1", function (d) { return d.source.y; })
+            .attr("x2", function (d) { return d.target.x; })
+            .attr("y2", function (d) { return d.target.y; });*/
+
+        node2.attr("x", function (d) { return d.x - d.width / 2 + pad; })
+            .attr("y", function (d) { return d.y - d.height / 2 + pad; });
+        
+        group2.attr("x", function (d) { return d.bounds.x; })
+             .attr("y", function (d) { return d.bounds.y; })
+            .attr("width", function (d) { return d.bounds.width(); })
+            .attr("height", function (d) { return d.bounds.height(); });
+
+        label2.attr("x", function (d) { return d.x; })
+             .attr("y", function (d) {
+                 var h = height;
+                 return d.y + h/4;
+             });
+    });
+
 }
 
 
+/*
 function update(){
    // console.log("update "+link);
     if (link && node){
@@ -219,7 +311,7 @@ function update(){
           //  nodeText.attr("x", function(d) { return d.x; })
          //   .attr("y", function(d) { return d.y; });
     }    
-} 
+} */
  function isIE() { return ((navigator.appName == 'Microsoft Internet Explorer') || ((navigator.appName == 'Netscape') && (new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null))); }
 
 // check if a node already exist.
