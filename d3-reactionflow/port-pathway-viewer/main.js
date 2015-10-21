@@ -33,7 +33,8 @@ var nodeRadius = 10;
 
 
 var groups2, nodes2, links2;
-            
+        
+var isFirst = true;            
 function vis() {
     
     nodes = [];    
@@ -160,10 +161,21 @@ function vis() {
     nodes.forEach(function (v) { v.width = v.height = nodeRadius/5; }); 
 
     var constraints = {"axis":"y", "left":0, "right":1, "gap":25};
+    var myconstraints = {
+    "type": "alignment",
+    "axis": "x",
+    "offsets": [
+        {"node": "1","offset": "0"},
+        {"node": "2", "offset": "0"},
+        {"node": "3", "offset": "0"}
+    ]
+};
+
     force.nodes(nodes)
         .links(links)
         .flowLayout("y", 40)
        // .flowLayout("x", 30)
+     //  .constraints(myconstraints)
         .symmetricDiffLinkLengths(30)
         .avoidOverlaps(true)
         .start();
@@ -230,7 +242,7 @@ function vis() {
     cola
         .nodes(nodes2)
         .links(links2)
-        .groups(groups2)
+       .groups([])
         .flowLayout("y", 60)
         .symmetricDiffLinkLengths(30)
         .avoidOverlaps(true)
@@ -240,7 +252,7 @@ function vis() {
     var group2 = svg.selectAll(".group2")
         .data(groups2)
       .enter().append("rect")
-        .attr("rx", 8).attr("ry", 8)
+        .attr("rx", 5).attr("ry", 5)
         .attr("class", "group2")
         .style("fill", function (d, i) { return color(i); });
 
@@ -249,7 +261,7 @@ function vis() {
       .enter().append("line")
         .attr("class", "link2");
 
-    var pad = 3;
+    var pad = 15;
     var node2 = svg.selectAll(".node2")
         .data(nodes2)
       .enter().append("rect")
@@ -279,17 +291,29 @@ function vis() {
         node2.attr("x", function (d) { return d.x - d.width / 2 + pad; })
             .attr("y", function (d) { return d.y - d.height / 2 + pad; });
         
-        group2.attr("x", function (d) { return d.bounds.x; })
-             .attr("y", function (d) { return d.bounds.y; })
-            .attr("width", function (d) { return d.bounds.width(); })
-            .attr("height", function (d) { return d.bounds.height(); });
-
+       
         label2.attr("x", function (d) { return d.x; })
              .attr("y", function (d) {
                   var h = this.getBBox().height;
                    return d.y + h/4;
              });
+        var condition =  (isFirst && (cola.alpha()<0.02));    
+        if (condition){
+            console.log("MAKE GROUPS"); 
+            cola.groups(groups2)
+                .start();
+            isFirst = false;  
+        }  
+        if (!isFirst){
+            group2.attr("x", function (d) { return d.bounds.x; })
+             .attr("y", function (d) { return d.bounds.y; })
+            .attr("width", function (d) { return d.bounds.width(); })
+            .attr("height", function (d) { return d.bounds.height(); });
+        }
+        console.log(cola.alpha()+" "+isFirst+"  "+(cola.alpha<0.02)+"  "+condition);   
+        
     });
+
 
 }
 
