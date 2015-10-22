@@ -1,7 +1,7 @@
          
 //Append a SVG to the body of the html page. Assign this SVG as an object to svg
 var width = 1000;
-var height = 600;
+var height = 800;
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -67,6 +67,7 @@ function vis() {
         node1.id = d3.select(d.node).attr("rdf:ID");
         node1.name = d3.select(d.node).select("displayName").text();
         node1.node = d.node;
+        node1.deep = 1;
         groups2.push(node1);
         
         
@@ -110,6 +111,25 @@ function vis() {
             });  
         }   
     }); 
+    // Set deep for groups
+    for (var i=0;i<groups2.length;i++){
+        setDeep(groups2[i])    
+    }   
+    function setDeep(gr){
+         if (gr.groups){
+            for (var j=0;j<gr.groups.length;j++){
+                var index2 = gr.groups[j];
+                groups2[index2].deep = gr.deep+1;
+                setDeep(groups2[index2])
+            } 
+        }    
+    }    
+
+
+    
+
+
+
 
     links2 = [];
     
@@ -123,11 +143,7 @@ function vis() {
             links2.push(link);
         }
     });    
-    //var link = {};
-    //link.source = 1;
-    //link.target = 12;   
-    //links2.push(link);    
-
+    
     
     // Process links ****************************************************************
     
@@ -261,7 +277,7 @@ function vis() {
       .enter().append("line")
         .attr("class", "link2");
 
-    var pad = 15;
+    var pad = 5;
     var node2 = svg.selectAll(".node2")
         .data(nodes2)
       .enter().append("rect")
@@ -299,18 +315,24 @@ function vis() {
              });
         var condition =  (isFirst && (cola.alpha()<0.02));    
         if (condition){
-            console.log("MAKE GROUPS"); 
+            console.log("Make GROUPS"); 
+            
+            groups2.forEach(function(d) {
+                d.padding = 10;
+            });  
+
             cola.groups(groups2)
                 .start();
             isFirst = false;  
         }  
         if (!isFirst){
             group2.attr("x", function (d) { return d.bounds.x; })
-             .attr("y", function (d) { return d.bounds.y; })
-            .attr("width", function (d) { return d.bounds.width(); })
-            .attr("height", function (d) { return d.bounds.height(); });
+                .attr("y", function (d) { return d.bounds.y; })
+                .attr("width", function (d) { return d.bounds.width()-3; })
+                .attr("height", function (d) { return d.bounds.height()-3; });
+              
         }
-        console.log(cola.alpha()+" "+isFirst+"  "+(cola.alpha<0.02)+"  "+condition);   
+       // console.log(cola.alpha()+" "+isFirst+"  "+(cola.alpha<0.02)+"  "+condition);   
         
     });
 
