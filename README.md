@@ -2,7 +2,7 @@ ReactionFlow
 =============
 ReactionFlow is a visual analytics application for pathway analysis that emphasizes the structural and causal relationships amongst proteins, complexes, and biochemical reactions within a given pathway.
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/TeaserImage.png)
+![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/TearserImage.png)
 
 Please click to watch the overview video.
 
