@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein10">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGAP</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature9" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference58" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein12">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ASPP2</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference12" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature3" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein11">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ASPP2</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature3" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference12" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference9">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref13" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference8">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref12" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MEK2</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference7">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref11" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MEK1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference6">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref10" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CRAF</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference5">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref9" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRAF</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference4">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref8" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ARAF</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference3">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref7" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HRAS</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference2">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref6" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NRAS</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference1">
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.ModificationFeature4" />
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref5" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KRAS</bp:name>
+</bp:ProteinReference>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref19">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PLCE1</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref18">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KNDC1</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref17">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P04637</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref16">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q13625</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:ModificationFeature rdf:about="org.biopax.paxtools.model.level3.ModificationFeature2">
+ <bp:modificationType rdf:resource="org.biopax.paxtools.model.level3.SequenceModificationVocabulary1" />
+</bp:ModificationFeature>
+
+<bp:ModificationFeature rdf:about="org.biopax.paxtools.model.level3.ModificationFeature1">
+ <bp:modificationType rdf:resource="org.biopax.paxtools.model.level3.SequenceModificationVocabulary1" />
+</bp:ModificationFeature>
+
+<bp:Catalysis rdf:about="org.biopax.paxtools.model.level3.Catalysis4">
+ <bp:controller rdf:resource="org.biopax.paxtools.model.level3.Protein28" />
+ <bp:controlled rdf:resource="org.biopax.paxtools.model.level3.ComplexAssembly6" />
+</bp:Catalysis>
+
+<bp:ModificationFeature rdf:about="org.biopax.paxtools.model.level3.ModificationFeature4">
+ <bp:modificationType rdf:resource="org.biopax.paxtools.model.level3.SequenceModificationVocabulary2" />
+ <bp:featureLocation rdf:resource="org.biopax.paxtools.model.level3.SequenceSite1" />
+</bp:ModificationFeature>
+
+<bp:ModificationFeature rdf:about="org.biopax.paxtools.model.level3.ModificationFeature3">
+ <bp:modificationType rdf:resource="org.biopax.paxtools.model.level3.SequenceModificationVocabulary2" />
+</bp:ModificationFeature>
+
+<bp:Catalysis rdf:about="org.biopax.paxtools.model.level3.Catalysis1">
+ <bp:controller rdf:resource="org.biopax.paxtools.model.level3.Protein4" />
+ <bp:controlled rdf:resource="org.biopax.paxtools.model.level3.BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:about="org.biopax.paxtools.model.level3.Catalysis3">
+ <bp:controller rdf:resource="org.biopax.paxtools.model.level3.Protein5" />
+ <bp:controlled rdf:resource="org.biopax.paxtools.model.level3.BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:about="org.biopax.paxtools.model.level3.Catalysis2">
+ <bp:controller rdf:resource="org.biopax.paxtools.model.level3.Protein25" />
+ <bp:controlled rdf:resource="org.biopax.paxtools.model.level3.BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature13">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature12" />
+</bp:BindingFeature>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature14">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature11" />
+</bp:BindingFeature>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref22">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q86X27</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref21">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q5JS13</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref20">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RALGDS</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature11">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature14" />
+</bp:BindingFeature>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref26">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8WZA2</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature12">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature13" />
+</bp:BindingFeature>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref25">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O95398</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref24">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q17RH5</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature10">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature9" />
+</bp:BindingFeature>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref23">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q91ZZ2</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:Pathway rdf:about="org.biopax.paxtools.model.level3.Pathway1">
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.Control4" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.ComplexAssembly5" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.ComplexAssembly6" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.Catalysis4" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.ComplexAssembly7" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.ComplexAssembly1" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.Catalysis1" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.ComplexAssembly2" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.ComplexAssembly3" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.Catalysis3" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.ComplexAssembly4" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.Catalysis2" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="org.biopax.paxtools.model.level3.BiochemicalReaction3" />
+</bp:Pathway>
+
+<bp:SequenceModificationVocabulary rdf:about="org.biopax.paxtools.model.level3.SequenceModificationVocabulary1">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref1" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phosphorylated residue</bp:term>
+</bp:SequenceModificationVocabulary>
+
+<bp:SequenceModificationVocabulary rdf:about="org.biopax.paxtools.model.level3.SequenceModificationVocabulary2">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref2" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitination</bp:term>
+</bp:SequenceModificationVocabulary>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref11">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q02750</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref10">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P04049</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref15">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q9H1Y0</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref14">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P28482</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref13">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P27361</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref12">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P36507</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref39">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q9NZL6</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref38">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8TDF6</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:ComplexAssembly rdf:about="org.biopax.paxtools.model.level3.ComplexAssembly5">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Complex7" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein18" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein12" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:ComplexAssembly>
+
+<bp:ComplexAssembly rdf:about="org.biopax.paxtools.model.level3.ComplexAssembly6">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Complex2" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.SmallMolecule4" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein23" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RIGHT-TO-LEFT</bp:conversionDirection>
+</bp:ComplexAssembly>
+
+<bp:ComplexAssembly rdf:about="org.biopax.paxtools.model.level3.ComplexAssembly7">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Complex1" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.SmallMolecule2" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein23" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:ComplexAssembly>
+
+<bp:ComplexAssembly rdf:about="org.biopax.paxtools.model.level3.ComplexAssembly1">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Complex3" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein1" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein2" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:ComplexAssembly>
+
+<bp:ComplexAssembly rdf:about="org.biopax.paxtools.model.level3.ComplexAssembly2">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Complex4" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein9" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein7" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:ComplexAssembly>
+
+<bp:ComplexAssembly rdf:about="org.biopax.paxtools.model.level3.ComplexAssembly3">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Complex5" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein14" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein22" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:ComplexAssembly>
+
+<bp:ComplexAssembly rdf:about="org.biopax.paxtools.model.level3.ComplexAssembly4">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Complex6" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein16" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein20" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:ComplexAssembly>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref40">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O15211</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref44">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q07890</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref43">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q07889</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref42">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8IZJ4</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref41">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q3MIN7</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref48">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q13576</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref47">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P46940</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref46">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q14C86</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref45">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q7VWQ8</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature9">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature10" />
+</bp:BindingFeature>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature8">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature7" />
+</bp:BindingFeature>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref29">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q9UHV5</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature7">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature8" />
+</bp:BindingFeature>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref28">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8TEU7</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature6">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature5" />
+</bp:BindingFeature>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref27">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q92565</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref33">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q13972</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref32">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8N431</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BiochemicalReaction rdf:about="org.biopax.paxtools.model.level3.BiochemicalReaction1">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Protein25" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein24" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:BiochemicalReaction>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref31">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q0VAM2</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref30">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8N9B8</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref37">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8IV61</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref36">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q7LDG7</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref35">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O95267</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BiochemicalReaction rdf:about="org.biopax.paxtools.model.level3.BiochemicalReaction2">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.Protein27" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.Protein26" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:BiochemicalReaction>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref34">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O14827</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:BiochemicalReaction rdf:about="org.biopax.paxtools.model.level3.BiochemicalReaction3">
+ <bp:right rdf:resource="org.biopax.paxtools.model.level3.SmallMolecule3" />
+ <bp:left rdf:resource="org.biopax.paxtools.model.level3.SmallMolecule1" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+</bp:BiochemicalReaction>
+
+<bp:Complex rdf:about="org.biopax.paxtools.model.level3.Complex6">
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein15" />
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P53-ASPP2</bp:displayName>
+</bp:Complex>
+
+<bp:Complex rdf:about="org.biopax.paxtools.model.level3.Complex5">
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein13" />
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATG5-ASPP2</bp:displayName>
+</bp:Complex>
+
+<bp:Complex rdf:about="org.biopax.paxtools.model.level3.Complex4">
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein8" />
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS-RASGAP</bp:displayName>
+</bp:Complex>
+
+<bp:Complex rdf:about="org.biopax.paxtools.model.level3.Complex3">
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein4" />
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS-RAF</bp:displayName>
+</bp:Complex>
+
+<bp:Complex rdf:about="org.biopax.paxtools.model.level3.Complex7">
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein17" />
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS-ASPP2</bp:displayName>
+</bp:Complex>
+
+<bp:Complex rdf:about="org.biopax.paxtools.model.level3.Complex2">
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein6" />
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.SmallMolecule3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS-GDP</bp:displayName>
+</bp:Complex>
+
+<bp:Complex rdf:about="org.biopax.paxtools.model.level3.Complex1">
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.SmallMolecule1" />
+ <bp:component rdf:resource="org.biopax.paxtools.model.level3.Protein5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS-GTP</bp:displayName>
+</bp:Complex>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein25">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MEK-P</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.ModificationFeature2" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference55" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein24">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MEK</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference55" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.ModificationFeature2" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein27">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK-P</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.ModificationFeature1" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference54" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein26">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference54" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.ModificationFeature1" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein28">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGEF</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference59" />
+</bp:Protein>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref49">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q86VI3</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference13">
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature8" />
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref17" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P53</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference12">
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature7" />
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature5" />
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature3" />
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref16" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ASPP2</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference11">
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature6" />
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref15" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATG5</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference10">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref14" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK2</bp:name>
+</bp:ProteinReference>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein21">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATG5</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature6" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference11" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein20">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P53</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference13" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature8" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein23">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature11" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature12" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein22">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATG5</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference11" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature6" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein14">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ASPP2</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference12" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature5" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein13">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ASPP2</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature5" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference12" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference19">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref23" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAPGEF1</bp:name>
+</bp:ProteinReference>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein16">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ASPP2</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference12" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature7" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference18">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref22" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RALGPS2</bp:name>
+</bp:ProteinReference>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein15">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ASPP2</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature7" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference12" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference17">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref21" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RALGPS1</bp:name>
+</bp:ProteinReference>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref51">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P20936</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein18">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature4" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference16">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref20" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q12967</bp:name>
+</bp:ProteinReference>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref50">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P21359</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein17">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature4" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference15">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref19" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q9P212</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference14">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref18" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q76NI1</bp:name>
+</bp:ProteinReference>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein19">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P53</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature8" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference13" />
+</bp:Protein>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref55">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O95294</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref54">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O43374</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref53">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q14644</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref52">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q15283</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref57">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q96PV0</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref56">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q9UJF2</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref9">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P15056</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref7">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P01112</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref8">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P10398</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref5">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P01116</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref6">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P01111</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uniprot</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref3">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">6830</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PubChem</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref4">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">8977</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PubChem</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref1">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00696</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+</bp:UnificationXref>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference24">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref28" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAPGEF6</bp:name>
+</bp:ProteinReference>
+
+<bp:UnificationXref rdf:about="org.biopax.paxtools.model.level3.UnificationXref2">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00492</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+</bp:UnificationXref>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference23">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref27" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAPGEF5</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference22">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref26" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAPGEF4</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference21">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref25" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAPGEF3</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference20">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref24" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAPGEF2</bp:name>
+</bp:ProteinReference>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein9">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGAP</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference58" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature9" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein8">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature10" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein7">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature10" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference29">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref33" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGRF1</bp:name>
+</bp:ProteinReference>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein6">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature11" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference28">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref32" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGEF1C</bp:name>
+</bp:ProteinReference>
+
+<bp:SequenceSite rdf:about="org.biopax.paxtools.model.level3.SequenceSite1">
+ <bp:sequencePosition rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">147</bp:sequencePosition>
+ <bp:positionStatus rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+</bp:SequenceSite>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference27">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref31" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGEF1B</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference26">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref30" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGEF1A</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference25">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref29" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAPGEFL1</bp:name>
+</bp:ProteinReference>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein1">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature1" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein5">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature11" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein4">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAF</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature2" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference57" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein3">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:displayName>
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature1" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference56" />
+</bp:Protein>
+
+<bp:Protein rdf:about="org.biopax.paxtools.model.level3.Protein2">
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAF</bp:displayName>
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference57" />
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature2" />
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference35">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref39" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RGL1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference34">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref38" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGRP4</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference33">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref37" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGRP3</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference32">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref36" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGRP2</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference31">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref35" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGRP1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference30">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref34" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGRF2</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference39">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref43" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SOS1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference38">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref42" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RGL4</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference37">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref41" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RGL3</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference36">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref40" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RGL2</bp:name>
+</bp:ProteinReference>
+
+<bp:Control rdf:about="org.biopax.paxtools.model.level3.Control4">
+ <bp:controlled rdf:resource="org.biopax.paxtools.model.level3.BiochemicalReaction3" />
+ <bp:controller rdf:resource="org.biopax.paxtools.model.level3.Protein10" />
+ <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+</bp:Control>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference46">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref50" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NF1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference45">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref49" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IQGAP3</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference44">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref48" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IQGAP2</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference43">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref47" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IQGAP1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference42">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref46" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GAPVD1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference41">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref45" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DAB2IP</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference40">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref44" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SOS2</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference49">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref53" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASA3</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference48">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref52" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASA2</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference47">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref51" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASA1</bp:name>
+</bp:ProteinReference>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature1">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature2" />
+</bp:BindingFeature>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature5">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature6" />
+</bp:BindingFeature>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature4">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature3" />
+</bp:BindingFeature>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature3">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature4" />
+</bp:BindingFeature>
+
+<bp:BindingFeature rdf:about="org.biopax.paxtools.model.level3.BindingFeature2">
+ <bp:bindsTo rdf:resource="org.biopax.paxtools.model.level3.BindingFeature1" />
+</bp:BindingFeature>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference57">
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature2" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference6" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference5" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference4" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAF</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference56">
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature1" />
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.ModificationFeature3" />
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature11" />
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature12" />
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature10" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference3" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference2" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference1" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference55">
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.ModificationFeature2" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference8" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference7" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MEK</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference54">
+ <bp:entityFeature rdf:resource="org.biopax.paxtools.model.level3.ModificationFeature1" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference9" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference10" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference53">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref57" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SYNGAP1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference52">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref56" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASAL2</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference51">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref55" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASAL1</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference50">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref54" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASA4</bp:name>
+</bp:ProteinReference>
+
+<bp:SmallMoleculeReference rdf:about="org.biopax.paxtools.model.level3.SmallMoleculeReference1">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref3" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GTP</bp:name>
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="org.biopax.paxtools.model.level3.SmallMoleculeReference2">
+ <bp:xref rdf:resource="org.biopax.paxtools.model.level3.UnificationXref4" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GDP</bp:name>
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference59">
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference24" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference23" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference22" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference21" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference20" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference40" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference29" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference28" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference27" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference26" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference25" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference35" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference34" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference33" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference32" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference31" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference30" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference19" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference18" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference17" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference39" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference16" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference38" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference15" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference37" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference14" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference36" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGEF</bp:name>
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="org.biopax.paxtools.model.level3.ProteinReference58">
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference46" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference45" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference44" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference43" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference42" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference53" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference41" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference52" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference51" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference50" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference49" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference48" />
+ <bp:memberEntityReference rdf:resource="org.biopax.paxtools.model.level3.ProteinReference47" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RASGAP</bp:name>
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="org.biopax.paxtools.model.level3.SmallMolecule4">
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.SmallMoleculeReference2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GDP</bp:displayName>
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature13" />
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="org.biopax.paxtools.model.level3.SmallMolecule1">
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature14" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.SmallMoleculeReference1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GTP</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="org.biopax.paxtools.model.level3.SmallMolecule3">
+ <bp:feature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature13" />
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.SmallMoleculeReference2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GDP</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="org.biopax.paxtools.model.level3.SmallMolecule2">
+ <bp:entityReference rdf:resource="org.biopax.paxtools.model.level3.SmallMoleculeReference1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GTP</bp:displayName>
+ <bp:notFeature rdf:resource="org.biopax.paxtools.model.level3.BindingFeature14" />
+</bp:SmallMolecule>
+</rdf:RDF>

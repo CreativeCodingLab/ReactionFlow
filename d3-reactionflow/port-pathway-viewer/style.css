@@ -1,0 +1,62 @@
+text {
+    font-family: Arial;
+    fill: #333;
+}
+
+main.container {
+    min-width: 90vw;
+}
+
+g.column text {
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+g.node {
+    cursor: pointer;
+}
+
+g.node text {
+    font-size: 0.5em;
+    font-family: Arial;
+    fill: #333;
+    fill-opacity: 0.5;
+}
+
+g.node circle {
+    fill: #333;
+    fill-opacity: 0.5;
+}
+
+g.link path {
+    stroke-opacity: 0.2;
+    fill: none;
+    stroke-width: 2;
+}
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+    cursor: move;
+}
+
+.group2 {
+  stroke: #fff;
+  stroke-width: 1.5px;
+  cursor: move;
+  opacity: 0.7;
+}
+
+.link2 {
+  stroke: #7a4e4e;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+}
+
+.label2 {
+    fill: black;
+    font-family: Verdana;
+    font-size: 11px;
+    text-anchor: middle;
+    cursor: move;
+}
