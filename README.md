@@ -22,15 +22,22 @@ The two following figures show similar actions performed on the ERBB2 pathway. T
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image2-ERBB2 pathway1.png)
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image2-ERBB2 pathway2.png)
 
-The two following figure shows causal relationships of 51 biochemical reactions in the Rb-E2F pathway. 
+The following figure shows causal relationships of 51 biochemical reactions in the Rb-E2F pathway. 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image3-Rb-E2F Pathway.png)
 
+The following figure shows causal relationships of 116 biochemical reactions in the Rb-E2F pathway. The data can be found on Reactome:
+http://www.reactome.org/PathwayBrowser/#/R-HSA-166520
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image4-NGF Signaling Pathway.png)
 
+The following figure shows causal relationships of 95 biochemical reactions in the Signaling to NOTCH pathway. The data can be found on Reactome:
+http://www.reactome.org/PathwayBrowser/#/R-HSA-157118&PATH=R-HSA-162582
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image5-Signaling to NOTCH.png)
 
+The following figure shows causal relationships of 200 biochemical reactions in the Myoclonic pathway. 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image6-Myoclonic pathway.png)
 
+The following figure shows causal relationships of 95 biochemical reactions in the Signaling to NOTCH pathway. The data can be found on Reactome:
+http://www.reactome.org/PathwayBrowser/#/R-HSA-157118&PATH=R-HSA-162582
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image7-Signaling to TGF.png)
 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPCR.png)
