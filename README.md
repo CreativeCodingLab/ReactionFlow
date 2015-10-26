@@ -33,11 +33,11 @@ The following figure shows causal relationships of 95 biochemical reactions in t
 http://www.reactome.org/PathwayBrowser/#/R-HSA-157118&PATH=R-HSA-162582
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image5-Signaling to NOTCH.png)
 
-The following figure shows causal relationships of 200 biochemical reactions in the Myoclonic pathway. This representation reveal the linear nature of this pathway.
+The following figure shows causal relationships of 200 biochemical reactions in the Myoclonic pathway. This representation reveals the linear nature of this pathway.
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image6-Myoclonic pathway.png)
 
-The following figure shows causal relationships of 95 biochemical reactions in the Signaling to NOTCH pathway. The data can be found on Reactome:
-http://www.reactome.org/PathwayBrowser/#/R-HSA-157118&PATH=R-HSA-162582
+The following figure shows causal relationships of 95 biochemical reactions in the Signaling to TGF pathway. The red arcs depict downstream effects of removing one biochemical reaction from the pathway. The data can be found on Reactome:
+http://www.reactome.org/PathwayBrowser/#/R-HSA-170834&PATH=R-HSA-162582
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image7-Signaling to TGF.png)
 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPCR.png)
