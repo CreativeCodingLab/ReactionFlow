@@ -17,6 +17,8 @@ The data is the RAF Cascade pathway. Within this view, input proteins are listed
 Viewers can fade these links and display all causal relationships in the pathway as depicted in the following figure.
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image1-RAF pathway2.png)
 
+The two following figures shows similar actions performed on the ERBB2 pathway. The data can be found on Reactome: http://www.reactome.org/PathwayBrowser/#/R-HSA-1227986
+
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image2-ERBB2 pathway1.png)
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image2-ERBB2 pathway2.png)
 
