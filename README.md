@@ -20,7 +20,7 @@ The following figure shows an example of using ReactionFlow to analyze the Influ
 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image5-Signaling to NOTCH.png)
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image6-Myochonic pathway.png)
+![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image6-Myoclonic pathway.png)
 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image7-Signaling to TGF.png)
 
