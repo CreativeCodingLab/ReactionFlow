@@ -14,17 +14,17 @@ The following figure shows an example of using ReactionFlow to analyze the Influ
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image2-ERBB2 pathway1.png)
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image2-ERBB2 pathway2.png)
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image3-Rb-E2F pathway.png)
+![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image3-Rb-E2F Pathway.png)
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image4-NGF Signaling pathway.png)
+![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image4-NGF Signaling Pathway.png)
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image5-Signaling to NOTCH pathway.png)
+![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image5-Signaling to NOTCH.png)
 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image6-Myochonic pathway.png)
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image7-Signaling to TGF pathway.png)
+![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image7-Signaling to TGF.png)
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPRC pathway.png)
+![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPRC.png)
 
 
 Please click to watch the overview video.
