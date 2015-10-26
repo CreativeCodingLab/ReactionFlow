@@ -8,6 +8,10 @@ The following figure shows an example of using ReactionFlow to analyze the Influ
 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/TearserImage.png)
 
+Here are more examples:
+
+The data is the RAF Cascade pathway. Within this view, input proteins are listed on the left, and output proteins are listed on the right. Input proteins may directly participate in a reaction (shown with green links) or they may form complexes with other proteins (shown with green links) before participating in a reaction (shown with blue links). Complexes are displayed either as blue diamonds or as blue triangles. Triangles represent complexes that only appear as inputs or outputs, while diamonds represent complexes that act as both inputs and outputs within the pathway.  There are 19 biochemical reactions shown as circles in the center of the view. The circle size is computed based on the number of input and output proteins and complexes of each reaction.
+
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image1-RAF pathway1.png)
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image1-RAF pathway2.png)
 
