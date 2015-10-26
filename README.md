@@ -24,7 +24,7 @@ The following figure shows an example of using ReactionFlow to analyze the Influ
 
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image7-Signaling to TGF.png)
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPRC.png)
+![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPCR.png)
 
 
 Please click to watch the overview video.
