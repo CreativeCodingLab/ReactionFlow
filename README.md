@@ -40,6 +40,8 @@ The following figure shows causal relationships of 95 biochemical reactions in t
 http://www.reactome.org/PathwayBrowser/#/R-HSA-170834&PATH=R-HSA-162582
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image7-Signaling to TGF.png)
 
+The following figure shows causal relationships of 292 biochemical reactions in the Signaling to GPCR pathway. The data can be found on Reactome:
+http://www.reactome.org/PathwayBrowser/#/R-HSA-372790&PATH=R-HSA-162582
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPCR.png)
 
 
