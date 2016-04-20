@@ -34,23 +34,47 @@ g.link path {
     stroke-width: 2;
 }
 
+
 .node {
-  stroke: #fff;
+  stroke: #000;
   stroke-width: 1.5px;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+  opacity: 0.5;
+  marker-end: url(#end-arrow);
+}
+
+.node2 {
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-opacity: 0.5;
+    cursor: move;
+}
+
+.node3 {
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-opacity: 0.5;
     cursor: move;
 }
 
 .group2 {
   stroke: #fff;
-  stroke-width: 1.5px;
+  stroke-width: 0.5px;
+  stroke-opacity: 0.5;
   cursor: move;
-  opacity: 0.7;
 }
 
 .link2 {
-  stroke: #7a4e4e;
-  stroke-width: 2px;
-  stroke-opacity: 1;
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+  opacity: 0.7;
+  marker-end: url(#end-arrow);
 }
 
 .label2 {

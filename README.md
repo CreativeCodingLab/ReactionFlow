@@ -1,5 +1,10 @@
 ReactionFlow
 =============
+Please click to watch the overview video.
+
+[![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/TeaserVideo.png)](http://www.cs.uic.edu/~tdang/ReactionFlow/video.mp4)
+
+
 ReactionFlow is a visual analytics application for pathway analysis that emphasizes the structural and causal relationships amongst proteins, complexes, and biochemical reactions within a given pathway. To support the identified causality analysis tasks, user interactions allow an analyst to filter, cluster, and select pathway components across linked views. Animation is used to highlight the flow of activity through a pathway. 
 
 We have defined a causal relationship between two reactions if the output participants of one reaction act as the input to another reaction. Causality is therefore a directed relationship, and in our visualizations causality is depicted through the use of gradient-filled lines, where direction flows from yellow to black as depicted in the following figure. In other words, reaction 2 is downstream of reaction 1.
@@ -45,9 +50,6 @@ http://www.reactome.org/PathwayBrowser/#/R-HSA-372790&PATH=R-HSA-162582
 ![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPCR.png)
 
 
-Please click to watch the overview video.
-
-[![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/TeaserVideo.png)](http://www.cs.uic.edu/~tdang/ReactionFlow/video.mp4)
 
 The application (ReactionFlow_1_1.jar) is available in application.Cross-Platform folder.
 
