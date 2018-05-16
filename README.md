@@ -2,7 +2,7 @@ ReactionFlow
 =============
 Please click to watch the overview video.
 
-[![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/TeaserVideo.png)](http://www.cs.uic.edu/~tdang/ReactionFlow/video.mp4)
+[![ScreenShot](./images/TeaserVideo.png)](./images/video.mp4)
 
 
 ReactionFlow is a visual analytics application for pathway analysis that emphasizes the structural and causal relationships amongst proteins, complexes, and biochemical reactions within a given pathway. To support the identified causality analysis tasks, user interactions allow an analyst to filter, cluster, and select pathway components across linked views. Animation is used to highlight the flow of activity through a pathway. 
@@ -11,7 +11,7 @@ We have defined a causal relationship between two reactions if the output partic
 
 The following figure shows an example of using ReactionFlow to analyze the Influenza Infection pathway. In the first panel, we show all causal relationships (yellow-black gradient arcs) of 52 biochemical reactions in the pathway. Input and output participants are aligned on the left and right which can be highlighted when rolling over a reaction. In the second panel, we show downstream effects (red arcs) of "knocking out" proteins in the first reaction.
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/TearserImage.png)
+![ScreenShot](./images/TearserImage.png)
 
 Here are more examples:
 
@@ -20,34 +20,34 @@ The data is the RAF Cascade pathway. Within this view, input proteins are listed
 ![ScreenShot](./images/Image1-RAF_pathway1.png)
 
 Viewers can fade these links and display all causal relationships in the pathway as depicted in the following figure.
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image1-RAF pathway2.png)
+![ScreenShot](./images/Image1-RAF_pathway2.png)
 
 The two following figures show similar actions performed on the ERBB2 pathway. The pathway data can be found on Reactome: http://www.reactome.org/PathwayBrowser/#/R-HSA-1227986
 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image2-ERBB2 pathway1.png)
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image2-ERBB2 pathway2.png)
+![ScreenShot](./images/Image2-ERBB2_pathway1.png)
+![ScreenShot](./images/Image2-ERBB2_pathway2.png)
 
 The following figure shows causal relationships of 51 biochemical reactions in the Rb-E2F pathway. 
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image3-Rb-E2F Pathway.png)
+![ScreenShot](./images/Image3-Rb-E2F_Pathway.png)
 
 The following figure shows causal relationships of 116 biochemical reactions in the Signaling by NGF pathway. The pathway data can be found on Reactome:
 http://www.reactome.org/PathwayBrowser/#/R-HSA-166520
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image4-NGF Signaling Pathway.png)
+![ScreenShot](./images/Image4-NGF_Signaling_Pathway.png)
 
 The following figure shows causal relationships of 95 biochemical reactions in the Signaling by NOTCH pathway. The pathway data can be found on Reactome:
 http://www.reactome.org/PathwayBrowser/#/R-HSA-157118&PATH=R-HSA-162582
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image5-Signaling to NOTCH.png)
+![ScreenShot](./images/Image5-Signaling_to_NOTCH.png)
 
 The following figure shows causal relationships of 200 biochemical reactions in the Myoclonic pathway. This representation reveals the linear nature of this pathway.
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image6-Myoclonic pathway.png)
+![ScreenShot](./images/Image6-Myoclonic_pathway.png)
 
 The following figure shows causal relationships of 95 biochemical reactions in the Signaling by TGF pathway. The red arcs depict downstream effects of removing one biochemical reaction from the pathway. The pathway data can be found on Reactome:
 http://www.reactome.org/PathwayBrowser/#/R-HSA-170834&PATH=R-HSA-162582
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image7-Signaling to TGF.png)
+![ScreenShot](./images/Image7-Signaling_to_TGF.png)
 
 The following figure shows causal relationships of 292 biochemical reactions in the Signaling by GPCR pathway. The pathway data can be found on Reactome:
 http://www.reactome.org/PathwayBrowser/#/R-HSA-372790&PATH=R-HSA-162582
-![ScreenShot](http://www.cs.uic.edu/~tdang/ReactionFlow/Image8-Signaling to GPCR.png)
+![ScreenShot](./images/Image8-Signaling_to_GPCR.png)
 
 
 
