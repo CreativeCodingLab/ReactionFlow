@@ -2,7 +2,7 @@ ReactionFlow
 =============
 Please click to watch the overview video.
 
-[![ScreenShot](./images/TeaserVideo.png)](./images/video.mp4)
+[![ScreenShot](./images/TeaserVideo.png)](https://github.com/CreativeCodingLab/ReactionFlow/raw/master/images/video.mp4)
 
 
 ReactionFlow is a visual analytics application for pathway analysis that emphasizes the structural and causal relationships amongst proteins, complexes, and biochemical reactions within a given pathway. To support the identified causality analysis tasks, user interactions allow an analyst to filter, cluster, and select pathway components across linked views. Animation is used to highlight the flow of activity through a pathway. 
