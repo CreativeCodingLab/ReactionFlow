@@ -54,7 +54,7 @@ http://www.reactome.org/PathwayBrowser/#/R-HSA-372790&PATH=R-HSA-162582
 The application (ReactionFlow_1_1.jar) is available in application.Cross-Platform folder.
 
 
-This work was funded by the DARPA Big Mechanism Program under ARO contract WF911NF-14-1-0395. A paper on ReactionFlow was presented at the BioVis track at ISMB 2015 in Dublin, Ireland. 
+This work was funded by the DARPA Big Mechanism Program under ARO contract WF911NF-14-1-0395. A paper on ReactionFlow was presented at the BioVis track at ISMB 2015 in Dublin, Ireland: 
 
 TN Dang, P Murray, J Aurisano, and AG Forbes. [ReactionFlow: An interactive visualization tool for causality analysis in biological pathways](https://creativecoding.soe.ucsc.edu/pdfs/Dang_ReactionFlow_BioVis2015.pdf). BMC Proceedings 9(6), 2015.
 
