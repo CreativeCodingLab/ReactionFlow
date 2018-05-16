@@ -11,7 +11,7 @@ We have defined a causal relationship between two reactions if the output partic
 
 The following figure shows an example of using ReactionFlow to analyze the Influenza Infection pathway. In the first panel, we show all causal relationships (yellow-black gradient arcs) of 52 biochemical reactions in the pathway. Input and output participants are aligned on the left and right which can be highlighted when rolling over a reaction. In the second panel, we show downstream effects (red arcs) of "knocking out" proteins in the first reaction.
 
-![ScreenShot](./images/TearserImage.png)
+![ScreenShot](./images/TeaserImage.png)
 
 Here are more examples:
 
