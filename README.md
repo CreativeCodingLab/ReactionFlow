@@ -61,7 +61,7 @@ TN Dang, P Murray, J Aurisano, and AG Forbes. [ReactionFlow: An interactive visu
 
 @article{DangReactionFlowBioVis2015,
 title={{ReactionFlow: A}n interactive visualization tool for causality analysis in biological pathways},
-author={Tuan Dang and Paul Murray and Jillian Aurisano and Angus G. Forbes},
+author={Tuan N. Dang and Paul Murray and Jillian Aurisano and Angus G. Forbes},
 journal = {{BMC Proceedings}},
 address={Dublin, Ireland},
 volume = {9},
